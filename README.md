@@ -1,12 +1,11 @@
 # 📊 IPL Cricket Analysis (2008–2022)
-### _SQL • Python • Power BI End-to-End Data Analytics Project_
+### _SQL • Python • Power BI — End-to-End Data Analytics Project_
 
 <p align="center">
   <img src="Dashboard Images/dashboard.png" alt="IPL Dashboard" width="90%">
 </p>
 
 ---
-
 
 ## 📌 Table of Contents
 1. [Project Overview](#project-overview)
@@ -20,6 +19,9 @@
 9. [How to Run the Project](#how-to-run-the-project)
 10. [Future Enhancements](#future-enhancements)
 11. [Author](#author)
+12. [Power BI Skills & Learnings](#-power-bi-skills--learnings)
+13. [Local Setup Guide](#-local-setup-guide)
+14. [Author & Connect](#-author--connect)
 
 ---
 
@@ -69,7 +71,7 @@ A perfect demonstration of **SQL + Python + Power BI** integration for a profess
 ## 📂 Dataset Description
 
 ### **1️⃣ Matches Dataset — `ipl_matches_2008_2022`**
-Contains match-level data including:
+Contains match-level data:
 - Match ID  
 - Venue  
 - Winner  
@@ -95,14 +97,14 @@ Contains granular ball-by-ball details:
 - Export cleaned dataset  
 
 ### **2️⃣ SQL Transformation**
-- Import using COPY command  
+- Import using COPY  
 - Remove duplicates  
 - Create analytical views  
 
 ### **3️⃣ Power BI Modeling**
-- Data relationships  
-- DAX measures  
-- KPIs and visuals  
+- Build relationships  
+- Create DAX measures  
+- Develop KPIs  
 
 ### **4️⃣ Dashboard Development**
 - Slicers  
@@ -114,18 +116,26 @@ Contains granular ball-by-ball details:
 
 ## 📁 Project Structure
 
-D:\IPL Power BI Project
+IPL Power BI Project
 │
-├── Dashboard
-│ └── cricket.pbix
+├── dashboard
+│   └── cricket.pbix
 │
-├── Dashboard Images
-│ └── dashboard.png
+├── dashboard images
+│   └── dashboard.png
+│
+├── IPL images
+│   └── [other IPL-related images]
 │
 ├── data
-│ ├── ipl_ball_by_ball_2008_2022.csv
-│ └── ipl_matches_2008_2022.csv
+│   ├── ipl_ball_by_ball_2008_2022.csv
+│   └── ipl_matches_2008_2022.csv
 │
+├── sql
+│   └── [SQL scripts & queries]
+│
+├── .gitignore
+├── IPL Cricket Analysis.pdf
 └── README.md
 
 
@@ -147,23 +157,18 @@ D:\IPL Power BI Project
 - **4s:** 25.49K  
 
 ### 🎯 Batting Stats
-- Total runs  
-- Strike rate  
-- Number of 4s & 6s  
+- Runs, Strike Rate, 4s & 6s  
 
 ### 🎯 Bowling Stats
-- Wickets  
-- Economy  
-- Bowling average  
-- Bowling strike rate  
+- Wickets, Economy, Bowling Avg, Strike Rate  
 
-### 🏟 Venue-wise Match Wins
+### 🏟 Venue-Wise Wins
 - Eden Gardens  
 - Wankhede Stadium  
-- M. Chinnaswamy Stadium  
+- Chinnaswamy Stadium  
 
 ### 🧭 Toss Decisions
-- Field-first strategy gives better win percentages.
+- Field-first strategy shows higher win %.
 
 ### 🥇 Most Successful Team
 - **Mumbai Indians — 131 wins**
@@ -172,14 +177,13 @@ D:\IPL Power BI Project
 
 ## 📊 Dashboard Features
 
-- ✔ Dropdown selector for batsmen  
-- ✔ Dropdown selector for bowlers  
+- ✔ Dropdown for batsmen & bowlers  
 - ✔ Interactive slicers  
 - ✔ Donut charts (toss decision)  
-- ✔ Venue-wise stacked bar charts  
-- ✔ Team performance bar charts  
-- ✔ KPI cards for key stats  
-- ✔ Clean, modern design  
+- ✔ Venue-wise bar charts  
+- ✔ Team performance bars  
+- ✔ KPI cards  
+- ✔ Clean UI/UX  
 
 ---
 
@@ -187,33 +191,32 @@ D:\IPL Power BI Project
 
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/IPL-Cricket-Analysis.git
+git clone https://github.com/mukeshkd58/IPL-Cricket-Analysis.git
 
 2️⃣ Import SQL Data
 
 COPY ipl_matches_2008_2022 
-FROM 'path-to-file.csv' 
+FROM 'your-path.csv' 
 DELIMITER ',' CSV HEADER;
 
 3️⃣ Run Python Script
 
 python data_cleaning.py
 
-4️⃣ Open Power BI File
+4️⃣ Open Power BI Dashboard
 
 Dashboard/cricket.pbix
 
 
 🚀 Future Enhancements
 
-Machine learning player performance predictions
+Machine learning: Player performance prediction
 
-Streamlit or Power BI Embedded web app
+Streamlit/Power BI Embedded web app
 
 Season-wise comparison pages
 
-Enhanced SQL views for optimization
-
+More SQL views for analysis
 
 👨‍💻 Author
 
@@ -221,38 +224,42 @@ Mukesh Kumar
 Mining Engineer • MS Environmental Engineering (Italy)
 Data Analyst | SQL | Python | Power BI
 
+💡 Power BI Skills & Learnings
 
-## 💡 Power BI Skills & Learnings
+This project demonstrates strong expertise in:
 
-This project demonstrates proficiency in advanced Data Analytics and Business Intelligence techniques:
+ETL with Power Query
 
-* **ETL (Power Query):** Extensive use of Power Query Editor for data cleaning, transformation, and shaping (e.g., merging tables, handling data types, addressing missing values).
-* **Advanced Data Modeling:** Implementing an efficient **Star Schema** with well-defined relationships between Fact and Dimension tables for optimal performance.
-* **DAX Proficiency:** Creation of complex and optimized DAX measures such as `Total Runs`, `Strike Rate (Adjusted)`, `Economy Rate`, `Rankings`, and `Time Intelligence` functions.
-* **Report Design & UX:** Focusing on clean, professional design, effective use of white space, color themes, and implementation of features like **Custom Tooltips** and **Drill-through/Drill-down** capabilities for enhanced user experience.
+Star Schema Data Modeling
+
+Advanced DAX Measures
+
+Custom Tooltips & Drill-through Navigation
+
+Professional Dashboard UI/UX
+
+
+⚙️ Local Setup Guide
+
+Install Power BI Desktop
+
+Clone repo:
+git clone https://github.com/mukeshkd58/IPL_Cricket_Analysis_2008-2022_SQL_Python_Powerbi.git
+
+Open Dashboard/cricket.pbix
+
+Explore the dashboard
+
+✍️ Author & Connect
+
+I welcome collaborations and feedback!
+
+Platform	Link
+Author	Mukesh Kumar
+GitHub	https://github.com/mukeshkd58
+
+Project URL	https://github.com/mukeshkd58/IPL_Cricket_Analysis_2008-2022_SQL_Python_Powerbi
+
+LinkedIn	https://www.linkedin.com/in/mukesh-kumar-567284301/
 
 ---
-
-## ⚙️ Local Setup Guide
-
-To explore the Power BI report locally, please ensure you have **Microsoft Power BI Desktop** installed.
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/mukeshkd58/IPL_Cricket_Analysis_2008-2022_SQL_Python_Powerbi.git](https://github.com/mukeshkd58/IPL_Cricket_Analysis_2008-2022_SQL_Python_Powerbi.git)
-    ```
-2.  **Open the File:** Navigate to the `Dashboard/` folder and open the `cricket.pbix` file.
-3.  **Explore:** Interact with the dashboard slicers and visuals to analyze the data.
-
----
-
-## ✍️ Author & Connect
-
-I welcome feedback and collaborations!
-
-| Platform | Link |
-| :--- | :--- |
-| **Author** | **Mukesh Kumar** |
-| **GitHub** | [mukeshkd58](https://github.com/mukeshkd58) |
-| **Project URL** | [IPL Cricket Analysis 2008-2022](https://github.com/mukeshkd58/IPL_Cricket_Analysis_2008-2022_SQL_Python_Powerbi) |
-| **LinkedIn** | [mukesh-kumar-567284301](https://www.linkedin.com/in/mukesh-kumar-567284301/) |
