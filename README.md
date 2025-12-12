@@ -6,7 +6,7 @@
 </p>
 
 ---
-
+![logo](https://github.com/mukeshkd58/IPL_Cricket_Analysis_sql_Python_PowerBi/blob/main/Dashboard%20image.png)
 ## 📌 Table of Contents
 1. [Project Overview](#project-overview)
 2. [Objectives](#objectives)
